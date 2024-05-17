@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiais</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Calculadora de Materiais</h1>
+        <h3>Selecione a quantidade de cada material</h3>
+        <div class="materials">
+            <div class="material">
+                <p class="tituloMaterial materialMargin">
+                    Madeira
+                </p>
+                <p class="valorMaterial">
+                    R$<span id="valorMadeira">50</span>
+                </p>
+                <form>
+                    <input class="quantidadeMaterial" type="number" name="Quantidade" id="quantidadeMadeira" placeholder="Quantidade">
+                </form>
+            </div>
+            <div class="material">
+                <p class="tituloMaterial materialMargin">
+                    Cimento
+                </p>
+                <p class="valorMaterial">
+                    R$<span id="valorCimento">25</span>
+                </p>
+                <form>
+                    <input class="quantidadeMaterial" type="number" name="Quantidade" id="quantidadeCimento" placeholder="Quantidade">
+                </form>
+            </div>
+            <div class="material">
+                <p class="tituloMaterial materialMargin">
+                    Tijolo
+                </p>
+                <p class="valorMaterial">
+                    R$<span id="valorTijolo">20</span>
+                </p>
+                <form>
+                    <input class="quantidadeMaterial" type="number" name="Quantidade" id="quantidadeTijolo" placeholder="Quantidade">
+                </form>
+            </div>
+            <div class="botao">
+                <form>
+                    <button onclick="calcularTotal()" class="submit" type="button">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <Div class="resultado">
+            <p class="tituloResultado">
+                O valor total dos materiais é de: R$<span id="valorFinal">0</span>
+            </p>
+        </Div>
+    </div>
+    
+<script src="main.js"></script>
+</body>
+</html>
